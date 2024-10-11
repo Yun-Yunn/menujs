@@ -1,0 +1,53 @@
+@keyframes clignoteBorder {
+    0% {
+        border-color: red;
+    }
+
+    33% {
+        border-color: green;
+    }
+
+    66% {
+        border-color: blue;
+    }
+
+    100% {
+        border-color: yellow;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+img,
+svg {
+    width: 100%;
+}
+
+#header-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-image: url(../img/fond1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: -2px 18px 42px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -2px 18px 42px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px 18px 42px 0px rgba(0, 0, 0, 0.75);
+    border: 5px solid red;
+    animation: clignoteBorder 1s infinite;
+    text-align: center;
+    border-radius: 2%;
+}
+
+#header-nav ul {
+    display: flex;
+}
+
+ul li {
+    margin: 0 0.5rem;
+}
